@@ -6,8 +6,10 @@ pipeline{
     }
     stages{
         stage("clone repo from git "){
-            sshagent (credentials: ['github_ssh']) {
-                sh 'git clone git@github.com:GlobeDaBoarder/WebApp2.git'
+            steps{
+                sshagent (credentials: ['github_ssh']) {
+                    sh 'git clone git@github.com:GlobeDaBoarder/WebApp2.git'
+                }
             }
         }
         stage("build"){
