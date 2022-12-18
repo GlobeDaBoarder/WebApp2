@@ -7,7 +7,7 @@ pipeline{
     stages{
         stage("clone repo from git "){
             steps{
-                sh 'git clone git@github.com:GlobeDaBoarder/WebApp2.git'
+                git 'git@github.com:GlobeDaBoarder/WebApp2.git'
             }
         }
         stage("build"){
