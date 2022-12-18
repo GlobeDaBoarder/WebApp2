@@ -11,7 +11,7 @@ pipeline{
 //                     git 'git@github.com:GlobeDaBoarder/WebApp2.git'
 //                 }
                 sshagent (credentials: ['github_ssh']) {
-                    sh 'git clone git@github.com:GlobeDaBoarder/WebApp2.git'
+                    sh(script: 'git clone git@github.com:GlobeDaBoarder/WebApp2.git')
                 }
             }
         }
