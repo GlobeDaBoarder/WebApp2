@@ -11,10 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
-    <h1>test</h1>
+    <h1>I love java</h1>
   </body>
 </html>
